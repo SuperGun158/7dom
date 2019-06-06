@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>САНЯ</title>
+</head>
+<body>
+	<div class="block">
+			<img src="peny.jpg" class="igm">
+			<h3>Пенёк_кор</h3>
+			<p>ТЫК</p>
+		</div>
+		<div class="hist">
+			История корпарации.
+		</div>
+		<div class="vladec">
+			Владельцы корпарации.
+		</div>
+		<div class="name">
+			Названия корпарации.
+		</div>
+		<div class="shop">
+			Покупки.
+		</div>
+		<div class="usa">
+			<h3 class="gg">
+				
+			</h3>
+			<button class="btn">
+				Выйти
+			</button>
+		</div>
+		<script type="text/javascript">
+			let block = document.querySelector('.block');
+			let hist = document.querySelector('.hist');
+			let vladec = document.querySelector('.vladec');
+			let name = document.querySelector('.name');
+			let shop = document.querySelector('.shop');
+			let usa = document.querySelector('.usa');
+			let gg = document.querySelector('.gg');
+			let btn = document.querySelector('.btn');
+			let prover = true
+			block.onclick = function(){
+				if(prover == true){
+				hist.style.left = -25 + 'px';
+				vladec.style.left = -20 + 'px';
+				name.style.left = -25 + 'px';
+				shop.style.left = -25 + 'px';
+				prover = false
+			}
+			else{
+				hist.style.left = -220 + 'px';
+				vladec.style.left = -220 + 'px';
+				name.style.left = -220 + 'px';
+				shop.style.left = -220 + 'px';
+				prover = true
+			}
+			}
+			hist.onclick = function(){
+				usa.style.display = 'block';
+				gg.innerHTML = 'История Пенёк_корпорейшин началась ещё с Опасного Поцыка I (1630-1700г) в 1670 г. 2 сентября. Именно тогда он создал первый платный пенёк. Первы платный пенёк небыл таким прибыльным потому что Опасный Поцык I предупреждал что посидеть стоит 50 грв. Когда Опасный Поцык I умер от яда змеи, весь бизнес перешёл во владение Отшельника I (1670-1800г). Отшельник I не предупреждал что пенёк платный и брал за него не 50грв, а 100грв. Когда Отщельник I умер подовившийся детским питание, бизнес перешёл во владенья Отщельника II (1780-1900г). Отщельник II сделал оплату за отдых 1000грв (от сюда и пошла традиция платить косарь). После смерти Отщельника II от дракона, бизнес перешёл в овладенья Опасного Поцыка II (1880-1943г). Он был самым крутым из всех. Он построил 1 завот по производству пеньков и переменовал "Пеньки в честь Опасного Поцыка" в Пенёк_ком. Когда на фронте погиб Опасный Поцык II, бизнесом не кто не упровлял 3 года. Все думали что Пенёк_ком на всегда уйдёт, но в 1946 году Навальный I (1900-1980г) взял под контроль компанию. Он сделал новые пеньки которые автоматически забирали деньги у седевших (раньше возле пенька в кустах прятался собиральщик касарей).Он построил ещё 2 завода. После смерти Навального I на митинге 1980 г, бизнес был взят под контроль Опасного Поцыка III(1975-2005г). Он преобрёл земли дальнего востока (Камчатка). После смерти Опасного Поцыка III, бизнес был передан Навальному II (нынешнему владельцу). Он создал много заводов и переменовал Пенёк_ком на Пенёк_кор. И всё ещё Пенёк_кор стоит на 1 месте по пенькаводству в мировом рынке.'
+			}
+			btn.onclick = function(){
+			usa.style.display = 'none';
+			}
+			vladec.onclick = function(){
+				usa.style.display = 'block';
+				gg.innerHTML = 'Опасный Поцык I (1630-1700г), Отшельник I (1670-1800г), Отщельник II (1780-1880г), Опасный Поцык II (1900-1943г), Навальный I (1900-1980г), Опасный Поцык III (1975-2005г), Навальный II (1998-?г (владелец))'
+			}
+			name.onclick = function(){
+				usa.style.display = 'block';
+				gg.innerHTML = 'Пеньки в честь Опасного Поцыка (1670-1940г), Пенёк_ком (1940-2018г), Пенёк_кор (2018-?г)'
+			}
+			shop.onclick = function(){
+				alert('В 2019г. Открытие')
+			}
+		</script>
+</body>
+</html>
